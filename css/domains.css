@@ -1,0 +1,104 @@
+body {
+	overflow-x: hidden;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+
+body.light-theme {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.domain-page {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-bottom: 100px;
+  }
+  .domain {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 80px;
+	
+  }
+  .domain-icon{
+	width: 80%;
+	height: auto;
+}
+
+.description-domain{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: -10%;
+	padding-top: 5%;
+}
+
+svg{
+	width: 80%;
+	height: auto;
+}
+
+svg #lower-wave{
+	animation: lwave 2s linear infinite alternate-reverse;
+	animation-play-state: running;
+}
+ svg:hover #lower-wave{
+	animation-play-state: paused;
+}
+
+@keyframes lwave {
+	0% { 
+	  transform: translateY(0px);
+	  transform: translateX(-2px);
+	}
+	100% { 
+		transform: translateY(-5px);
+		transform: translateX(3px);
+	}
+}
+
+svg #upper-wave{
+	animation: uwave 2s linear infinite alternate-reverse;
+	animation-play-state: running;
+}
+svg:hover #upper-wave{
+	animation-play-state: paused;
+}
+
+@keyframes uwave {
+	0% { 
+	  transform: translateY(-5px);
+	  transform: translateX(3px);
+	}
+	100% { 
+		transform: translateY(0px);
+		transform: translateX(-2px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 761px) and (max-width: 1224px){
+}
+
+@media screen and (min-width: 321px) and (max-width: 760px) {
+	.domain-page{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.domain-page{
+		display: block;
+	}
+}

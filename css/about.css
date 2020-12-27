@@ -1,0 +1,87 @@
+body {
+	/* overflow-x: hidden; */
+	background-color: #1a1a1a;
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+body.light-theme {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+ 
+/* #light1 {
+	display: none;
+} */
+
+#dark1{
+	display: block;
+}
+
+
+.about-content {
+	/* background-color: #1a1a1a; */
+	width: 100%;
+	/* font-family: "sf_pro_displayregular"; */
+	padding-bottom: 6%;
+	justify-content: center;
+	text-align: center;
+}
+
+.about-1 {
+	height: 92vh;
+	padding-top: 6%;
+	display: block;
+}
+
+.about-text {
+	display: block;
+	text-align: center;
+	font-size: 160%;
+	font-weight: 500;
+}
+
+img.abtlogo {
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 15%;
+}
+
+.about-head {
+	font-size: 250%;
+	text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+	br {
+		content: " ";
+	}
+
+	br:after {
+		content: " ";
+	}
+
+	img.abtlogo {
+		width: 40%;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+
+	.about-text {
+		font-size: 110%;
+		line-height: 1.5;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.about-content {
+		padding: 10%;
+	}
+
+	.about-head {
+		padding-bottom: 10%;
+	}
+}

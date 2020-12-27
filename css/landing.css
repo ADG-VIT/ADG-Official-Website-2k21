@@ -1,0 +1,301 @@
+body {
+  overflow-x: hidden;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* .main-wrapper-home {
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.home-girl {
+  padding: 2%;
+  z-index: -100;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 92vh;
+  padding-top: 5%;
+}
+
+.home {
+  text-align: center;
+  height: 90vh;
+  padding: 2%;
+  margin-bottom: 7%;
+  float: center;
+  vertical-align: center;
+}
+
+.home-video {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 20%;
+  float: center;
+  vertical-align: center;
+  z-index: 999;
+  padding-top: 4%;
+}
+
+.girl-icon {
+  width: 40%;
+  height: auto;
+  margin-top: -80px;
+}
+
+.home-logo {
+  width: 400px;
+  height: 80px;
+  position: relative;
+  bottom: 90px;
+  padding-top: 0%;
+  margin-top: -100px;
+}
+
+.home-icon {
+  width: 375px;
+  height: auto;
+  /* text-align: center; */
+  margin-bottom: 0%;
+}
+
+.domain-icon {
+  width: 340px;
+  height: 340px;
+  /* text-align: ;*/
+  margin-bottom: 15px;
+}
+
+#tagline {
+  position: relative;
+  bottom: 70px;
+  letter-spacing: 0.2em;
+}
+
+#about-button {
+  position: relative;
+  bottom: 70px;
+  margin-bottom: -10px;
+}
+
+.heading-home {
+  font-size: 80px;
+  /* font-family: "sf_pro_displayregular"; */
+  /* font-style: normal; */
+  font-weight: bold;
+  line-height: 100px;
+  /* text-align: center; */
+  letter-spacing: 0.07em;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+.description-home {
+  font-family: "sf_pro_displayregular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  /* color: #B9B9B9; */
+}
+.button-home {
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "sf_pro_displayregular";
+  letter-spacing: 0.06em;
+  background-color: #1784ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.button-home:hover {
+  opacity: 1;
+  transition: 5ms;
+}
+
+.button-home:focus {
+  outline: none;
+}
+
+.home {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.home.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+video {
+  width: auto;
+  height: 92vh;
+}
+
+video:focus {
+  outline: none;
+}
+#video.back {
+  backdrop-filter: blur(10px);
+  background-color: black;
+  transition: 0.1s;
+}
+
+#introVid {
+  cursor: url("https://i.ibb.co/DggMpLm/business.png"), auto;
+}
+
+figcaption {
+  display: none;
+}
+#home04 :hover + figcaption {
+  opacity: 0.5;
+  display: block;
+}
+
+div.scrollmagic-pin-spacer{
+  z-index: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .home {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 40%;
+  }
+  #tagline {
+    bottom: 0;
+  }
+  .girl-icon {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .home-girl {
+    height: 75vh;
+  }
+  .home-logo {
+    /* display: none; */
+    width: 100%;
+    margin-top: -10px;
+  }
+  .home-icon {
+    width: 280px;
+  }
+  .domain-icon {
+    width: 260px;
+    margin-bottom: -10px;
+  }
+  #tagline {
+    bottom: 80px;
+  }
+  .video {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 60vh;
+  }
+  .home-video {
+    height: 60vh;
+    width: 100%;
+  }
+  .heading-home {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 760px) {
+  .home {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 20px;
+  }
+  #tagline {
+    bottom: 0;
+  }
+  .girl-icon {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .home-girl {
+    height: 72vh;
+  }
+  .home-logo {
+    /* display: none; */
+    width: 100%;
+    margin-top: -10px;
+  }
+  .home-icon {
+    width: 300px;
+  }
+  .domain-icon {
+    width: 280px;
+    height: auto;
+    margin-bottom: -10px;
+  }
+  #tagline {
+    bottom: 80px;
+  }
+  .video {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 60vh;
+  }
+  .home-video {
+    height: 60vh;
+    width: 100%;
+  }
+  .heading-home {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1224px) {
+  .home-girl {
+    padding-top: 10%;
+    height: 85vh;
+  }
+  .girl-icon {
+    width: 80%;
+  }
+  .home-logo {
+    /* display: none; */
+    width: 100%;
+    margin-top: -30px;
+  }
+  .home {
+    height: 80vh;
+  }
+  .home-video {
+    height: 60vh;
+  }
+  .video {
+    width: 100%;
+    height: 60vh;
+  }
+}
